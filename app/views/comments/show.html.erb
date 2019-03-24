@@ -1,0 +1,12 @@
+<h1> <%= "Comments about the #{@article_title.title}" %></h1>
+
+<% @comment_show.each do |val| %>
+<ul>
+ <li>
+   <%= val.content %>
+ </li>
+</ul>
+<% end %>
+
+<%= link_to 'Back Article', articles_path %>
+
